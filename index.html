@@ -18,17 +18,30 @@
     /* Adjust styling for smaller screens, like reducing font size, changing layout, etc. */
   }
 }
+      /* When the icon is clicked, show the links */
+    .navbar.responsive {
+      position: relative;
+    }
+
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .navbar.responsive a {
+      display: block;
 </style>
   </head>
   <body style="background-color: #6E6E6E;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid" style="background-color: #DDD0C8; height: 100px;">
-          <a class="navbar-brand" class="navbar-brand" href="#"><b>Kitchen extraodinaire</b></a>
+          <a class="navbar-brand" href="#"><b>Kitchen extraodinaire</b></a>
           <button class="navbar-toggler me-auto mb-2 mb-lg-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
